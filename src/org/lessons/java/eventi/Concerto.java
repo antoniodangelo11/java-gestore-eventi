@@ -7,15 +7,19 @@ import java.time.format.DateTimeFormatter;
 import java.text.DecimalFormat;
 
 public class Concerto extends Evento {
+
+    // Attributi
     private LocalTime ora;
     private BigDecimal prezzo;
 
+    // Costruttori
     public Concerto(String titolo, LocalDate data, int numeroPostiTotali, LocalTime ora, BigDecimal prezzo) {
         super(titolo, data, numeroPostiTotali);
         this.ora = ora;
         this.prezzo = prezzo;
     }
 
+    // Metodi
     public LocalTime getOra() {
         return ora;
     }
